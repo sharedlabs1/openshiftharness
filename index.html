@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenShift & Harness Enterprise Training</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a148c;
+            --secondary-color: #7b1fa2;
+            --tertiary-color: #e1bee7;
+            --dark-color: #12005e;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+        
+        .day-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .day-header {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 15px 20px;
+            font-weight: 600;
+        }
+        
+        .day-content {
+            padding: 20px;
+            background: white;
+        }
+        
+        .topic-section {
+            margin-bottom: 20px;
+        }
+        
+        .topic-header {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--tertiary-color);
+        }
+        
+        .lab-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .lab-header {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        ul.topic-list, ul.lab-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.topic-list li, ul.lab-list li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        ul.topic-list li:before {
+            content: '\f0da';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        ul.lab-list li:before {
+            content: '\f5ee';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+        
+        .week-header {
+            background: var(--dark-color);
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-5">OpenShift & Harness Enterprise Training</h1>
+
+        
+
+        <!-- Day 1: OpenShift Overview -->
+        <div class="day-card">
+            <div class="day-header">Day 1: OpenShift Overview</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Introduction to OpenShift</li>
+                        <li>Understanding Kubernetes and OpenShift differences</li>
+                        <li>OpenShift Key Components</li>
+                        <li>Cluster Architecture</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting up OpenShift Cluster</li>
+                        <li>Lab 2: Exploring OpenShift Console</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2: OpenShift Deployment -->
+        <div class="day-card">
+            <div class="day-header">Day 2: OpenShift Deployment</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Deployment Strategies in OpenShift</li>
+                        <li>Blue-Green and Canary Deployments</li>
+                        <li>Scaling Applications</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Creating and Managing Deployments</li>
+                        <li>Lab 2: Implementing Blue-Green Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 3: OpenShift Networking -->
+        <div class="day-card">
+            <div class="day-header">Day 3: OpenShift Networking</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Understanding OpenShift Networking</li>
+                        <li>Configuring Routes and Ingress</li>
+                        <li>Network Policies</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up Ingress and Routes</li>
+                        <li>Lab 2: Applying Network Policies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4: OpenShift Storage -->
+        <div class="day-card">
+            <div class="day-header">Day 4: OpenShift Storage</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Persistent Volumes and Persistent Volume Claims</li>
+                        <li>Dynamic Storage Provisioning</li>
+                        <li>Configuring Storage Classes</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Creating Persistent Volumes</li>
+                        <li>Lab 2: Configuring Dynamic Storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5: OpenShift Security -->
+        <div class="day-card">
+            <div class="day-header">Day 5: OpenShift Security</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Role-Based Access Control (RBAC)</li>
+                        <li>Security Context Constraints (SCC)</li>
+                        <li>Image Security</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Configuring RBAC Roles</li>
+                        <li>Lab 2: Implementing SCC for Pods</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 6: Harness Basics -->
+        <div class="day-card">
+            <div class="day-header">Day 6: Harness Basics</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Introduction to Harness</li>
+                        <li>Understanding CI/CD Pipelines</li>
+                        <li>Harness Key Features</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up Harness Environment</li>
+                        <li>Lab 2: Creating a Simple CI/CD Pipeline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 7: OpenShift Monitoring and Logging -->
+        <div class="day-card">
+            <div class="day-header">Day 7: OpenShift Monitoring and Logging</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Introduction to OpenShift Monitoring Tools</li>
+                        <li>Configuring Logging and Metrics</li>
+                        <li>Prometheus and Grafana Setup</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up Prometheus</li>
+                        <li>Lab 2: Visualizing Metrics in Grafana</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 8:
+        <!-- Day 8: OpenShift Scaling and Autoscaling -->
+        <div class="day-card">
+            <div class="day-header">Day 8: OpenShift Scaling and Autoscaling</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Horizontal Pod Autoscaler (HPA)</li>
+                        <li>Vertical Pod Autoscaler (VPA)</li>
+                        <li>Cluster Autoscaler</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Configuring Horizontal Pod Autoscaler</li>
+                        <li>Lab 2: Testing Vertical Pod Autoscaler</li>
+                        <li>Lab 3: Setting Up Cluster Autoscaler</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 9: OpenShift CI/CD Pipelines -->
+        <div class="day-card">
+            <div class="day-header">Day 9: OpenShift CI/CD Pipelines</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Introduction to Tekton Pipelines</li>
+                        <li>Creating CI/CD Workflows</li>
+                        <li>Integrating Jenkins with OpenShift</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up Tekton Pipelines</li>
+                        <li>Lab 2: Building CI/CD Workflows</li>
+                        <li>Lab 3: Configuring Jenkins Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 10: OpenShift Security Advanced -->
+        <div class="day-card">
+            <div class="day-header">Day 10: OpenShift Security Advanced</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Advanced RBAC Configurations</li>
+                        <li>Network Policies for Security</li>
+                        <li>Image Vulnerability Scanning</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Implementing Advanced RBAC</li>
+                        <li>Lab 2: Configuring Network Policies</li>
+                        <li>Lab 3: Running Security Scans on Images</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Day 11: OpenShift Storage Advanced -->
+        <div class="day-card">
+            <div class="day-header">Day 11: OpenShift Storage Advanced</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Managing Stateful Applications</li>
+                        <li>Dynamic Provisioning and Retention Policies</li>
+                        <li>Configuring Storage Classes for High Availability</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up StatefulSets</li>
+                        <li>Lab 2: Configuring Retention Policies</li>
+                        <li>Lab 3: Testing Storage Classes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 12: OpenShift Troubleshooting -->
+        <div class="day-card">
+            <div class="day-header">Day 12: OpenShift Troubleshooting</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Identifying Common Issues</li>
+                        <li>Debugging Pods and Nodes</li>
+                        <li>Resolving Deployment Failures</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Debugging Pod Failures</li>
+                        <li>Lab 2: Node Troubleshooting</li>
+                        <li>Lab 3: Fixing Deployment Errors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 13: OpenShift Monitoring Deep Dive -->
+        <div class="day-card">
+            <div class="day-header">Day 13: OpenShift Monitoring Deep Dive</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Prometheus Query Language (PromQL)</li>
+                        <li>Building Advanced Grafana Dashboards</li>
+                        <li>Configuring Alert Rules</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Writing PromQL Queries</li>
+                        <li>Lab 2: Building Custom Grafana Dashboards</li>
+                        <li>Lab 3: Setting Up Alerts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Day 14: OpenShift Multi-Cluster Management -->
+        <div class="day-card">
+            <div class="day-header">Day 14: OpenShift Multi-Cluster Management</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Introduction to Multi-Cluster Management</li>
+                        <li>Configuring Advanced Cluster Management (ACM)</li>
+                        <li>Managing Workloads Across Clusters</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up ACM</li>
+                        <li>Lab 2: Deploying Applications Across Clusters</li>
+                        <li>Lab 3: Monitoring Multi-Cluster Workloads</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 15: OpenShift GitOps -->
+        <div class="day-card">
+            <div class="day-header">Day 15: OpenShift GitOps</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Introduction to GitOps</li>
+                        <li>Configuring ArgoCD</li>
+                        <li>Deploying Applications Using GitOps</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Installing ArgoCD</li>
+                        <li>Lab 2: Deploying an Application Using GitOps</li>
+                        <li>Lab 3: Monitoring GitOps Pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 16: OpenShift Operator Framework -->
+        <div class="day-card">
+            <div class="day-header">Day 16: OpenShift Operator Framework</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Understanding Operators in OpenShift</li>
+                        <li>Using Built-in Operators</li>
+                        <li>Creating and Managing Custom Operators</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Deploying Built-in Operators</li>
+                        <li>Lab 2: Creating a Custom Operator</li>
+                        <li>Lab 3: Monitoring Operator Health</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Day 17: OpenShift Advanced Security -->
+        <div class="day-card">
+            <div class="day-header">Day 17: OpenShift Advanced Security</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Configuring Advanced Security Context Constraints (SCC)</li>
+                        <li>Managing Image Signing and Verification</li>
+                        <li>Best Practices for Secure OpenShift Deployments</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Customizing SCCs for Applications</li>
+                        <li>Lab 2: Implementing Image Signing</li>
+                        <li>Lab 3: Verifying Secure Deployments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 18: OpenShift Performance Tuning -->
+        <div class="day-card">
+            <div class="day-header">Day 18: OpenShift Performance Tuning</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Resource Requests and Limits</li>
+                        <li>Optimizing Node Configurations</li>
+                        <li>Monitoring and Troubleshooting Performance</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Configuring Resource Limits</li>
+                        <li>Lab 2: Optimizing Node Parameters</li>
+                        <li>Lab 3: Performance Testing Workloads</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 19: OpenShift Disaster Recovery -->
+        <div class="day-card">
+            <div class="day-header">Day 19: OpenShift Disaster Recovery</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Backup and Restore Strategies</li>
+                        <li>Using Velero for OpenShift Backups</li>
+                        <li>Planning Disaster Recovery Scenarios</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up Velero</li>
+                        <li>Lab 2: Performing Cluster Backups</li>
+                        <li>Lab 3: Testing Recovery Scenarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Day 20: OpenShift Monitoring Extensions -->
+        <div class="day-card">
+            <div class="day-header">Day 20: OpenShift Monitoring Extensions</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Extending Prometheus for Custom Metrics</li>
+                        <li>Configuring and Managing AlertManager</li>
+                        <li>Integrating Third-Party Monitoring Tools</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Adding Custom Metrics to Prometheus</li>
+                        <li>Lab 2: Creating Advanced Alerts with AlertManager</li>
+                        <li>Lab 3: Integrating External Monitoring Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 21: OpenShift Application Debugging -->
+        <div class="day-card">
+            <div class="day-header">Day 21: OpenShift Application Debugging</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Debugging Pods and Containers</li>
+                        <li>Using OpenShift Logs Effectively</li>
+                        <li>Diagnosing Application Performance Issues</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Debugging Failing Pods</li>
+                        <li>Lab 2: Analyzing Application Logs</li>
+                        <li>Lab 3: Identifying and Resolving Performance Bottlenecks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 22: OpenShift Multi-Tenant Architecture -->
+        <div class="day-card">
+            <div class="day-header">Day 22: OpenShift Multi-Tenant Architecture</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Understanding Multi-Tenancy in OpenShift</li>
+                        <li>Namespace Isolation Best Practices</li>
+                        <li>Configuring Resource Quotas and Limits</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Setting Up Multi-Tenant Namespaces</li>
+                        <li>Lab 2: Applying Resource Quotas</li>
+                        <li>Lab 3: Validating Namespace Isolation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Day 23: Harness Deployment Strategies -->
+        <div class="day-card">
+            <div class="day-header">Day 23: Harness Deployment Strategies</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Blue-Green Deployment Strategies</li>
+                        <li>Canary Deployments with Harness</li>
+                        <li>Feature Toggles and Release Gates</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Configuring Blue-Green Deployments</li>
+                        <li>Lab 2: Implementing Canary Releases</li>
+                        <li>Lab 3: Using Feature Toggles for Controlled Releases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 24: Harness Advanced CI/CD Features -->
+        <div class="day-card">
+            <div class="day-header">Day 24: Harness Advanced CI/CD Features</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Dynamic Pipelines and Templates</li>
+                        <li>Automating Rollbacks with Harness</li>
+                        <li>Using Governance and Auditing Tools</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Building Dynamic Pipelines</li>
+                        <li>Lab 2: Automating Rollback Scenarios</li>
+                        <li>Lab 3: Configuring Governance Rules</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 25: Harness and OpenShift Integration -->
+        <div class="day-card">
+            <div class="day-header">Day 25: Harness and OpenShift Integration</div>
+            <div class="day-content">
+                <div class="topic-section">
+                    <h4 class="topic-header">Session Topics</h4>
+                    <ul class="topic-list">
+                        <li>Setting Up Harness for OpenShift Deployments</li>
+                        <li>Managing OpenShift Workloads with Harness</li>
+                        <li>Monitoring and Optimizing Integrated Workflows</li>
+                    </ul>
+                </div>
+                <div class="lab-section">
+                    <h4 class="lab-header">Lab Activities</h4>
+                    <ul class="lab-list">
+                        <li>Lab 1: Configuring Harness for OpenShift</li>
+                        <li>Lab 2: Deploying Applications to OpenShift via Harness</li>
+                        <li>Lab 3: Monitoring Integrated Deployment Pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+                <!-- Day 26: Capstone Project - Part 1 -->
+                <div class="day-card">
+                    <div class="day-header">Day 26: Capstone Project - Part 1</div>
+                    <div class="day-content">
+                        <div class="topic-section">
+                            <h4 class="topic-header">Session Topics</h4>
+                            <ul class="topic-list">
+                                <li>Project Overview and Objectives</li>
+                                <li>Designing a Multi-Cloud Application Deployment</li>
+                                <li>Setting Up OpenShift and Harness Environments</li>
+                            </ul>
+                        </div>
+                        <div class="lab-section">
+                            <h4 class="lab-header">Capstone Activities</h4>
+                            <ul class="lab-list">
+                                <li>Task 1: Define Application Architecture</li>
+                                <li>Task 2: Set Up OpenShift Cluster for Multi-Cloud Deployment</li>
+                                <li>Task 3: Configure Harness for Deployment Pipelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Day 27: Capstone Project - Part 2 -->
+                <div class="day-card">
+                    <div class="day-header">Day 27: Capstone Project - Part 2</div>
+                    <div class="day-content">
+                        <div class="topic-section">
+                            <h4 class="topic-header">Session Topics</h4>
+                            <ul class="topic-list">
+                                <li>Deploying Applications Across Multiple Clusters</li>
+                                <li>Implementing CI/CD Pipelines with OpenShift and Harness</li>
+                                <li>Configuring Monitoring and Alerts</li>
+                            </ul>
+                        </div>
+                        <div class="lab-section">
+                            <h4 class="lab-header">Capstone Activities</h4>
+                            <ul class="lab-list">
+                                <li>Task 1: Deploy Application Across OpenShift Clusters</li>
+                                <li>Task 2: Build and Deploy CI/CD Pipelines</li>
+                                <li>Task 3: Set Up Monitoring and Alerting for Applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Day 28: Capstone Project - Part 3 -->
+                <div class="day-card">
+                    <div class="day-header">Day 28: Capstone Project - Part 3</div>
+                    <div class="day-content">
+                        <div class="topic-section">
+                            <h4 class="topic-header">Session Topics</h4>
+                            <ul class="topic-list">
+                                <li>Testing and Optimizing the Deployment</li>
+                                <li>Troubleshooting Issues Across Platforms</li>
+                                <li>Final Presentation and Feedback</li>
+                            </ul>
+                        </div>
+                        <div class="lab-section">
+                            <h4 class="lab-header">Capstone Activities</h4>
+                            <ul class="lab-list">
+                                <li>Task 1: Test Deployment Resilience</li>
+                                <li>Task 2: Troubleshoot and Resolve Platform Issues</li>
+                                <li>Task 3: Prepare and Present Final Project Report</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html> 
